@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "problem-rating-extension",
+  "version": "1.0",
+  "description": "Search problems from clist.by",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "avatar.png",
+      "48": "avatar.png",
+      "128": "avatar.png"
+    }
+  }
+}
