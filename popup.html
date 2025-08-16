@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Problem Rating</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h3>Search Problems</h3>
-    <input type="text" id="query" placeholder="Enter problem name" />
-    <button id="searchBtn">Search</button>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Problem Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <div id="results"></div>
+  <div class="container">    
+    <div id="results" class="result-area">
+      <small class="muted-text">Checking current tab for a problem…</small>
+    </div>
 
-    <script src="popup.js"></script>
-  </body>
+    <div class="divider"><span>OR</span></div>
+
+    <div class="manual-search">
+      <div class="input-group">
+        <input type="text" id="query-input" placeholder="Enter problem name">
+        <button id="search-btn" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
 </html>

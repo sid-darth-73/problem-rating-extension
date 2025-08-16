@@ -3,7 +3,7 @@
   "name": "problem-rating-extension",
   "version": "1.0",
   "description": "Search problems from clist.by",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -11,5 +11,13 @@
       "48": "avatar.png",
       "128": "avatar.png"
     }
-  }
+  },
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://www.leetcode.com/*",
+    "https://codeforces.com/*",
+    "https://www.codeforces.com/*",
+    "https://clist.by/*"
+  ]
 }
+
