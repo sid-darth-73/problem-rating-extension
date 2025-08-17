@@ -38,7 +38,6 @@ function setResultsMessage(message) {
 }
 
 /**
- * Adds a button and problem title to the results area for auto-detected problems.
  * @param {string} query The search query for the problem.
  * @param {string} titleAttr The hover title for the button.
  */
@@ -46,21 +45,19 @@ function addAutoButton(query, titleAttr = "") {
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = ""; // Clear previous content
 
-  // Create elements and assign classes from styles.css
   const wrapper = document.createElement("div");
   wrapper.className = "detected-result";
 
   const btn = document.createElement("button");
-  // Use a different color for the auto-detected button for clarity
   btn.className = "btn btn-success"; 
-  btn.textContent = "Search Clist";
+  btn.textContent = "Go";
   btn.title = `${titleAttr}\nQuery: ${query}`;
   btn.addEventListener("click", () => openClistSearch(query));
 
   const info = document.createElement("span");
   info.className = "problem-title";
   info.textContent = query;
-  info.title = query; // Show full query on hover if truncated
+  info.title = query;
 
   wrapper.appendChild(btn);
   wrapper.appendChild(info);
